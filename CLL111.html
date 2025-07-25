@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLL111 - Material & Energy Balances</title>
+    <style>
+        :root {
+            --bg-color: #121212; --card-bg-color: #1e1e1e; --accent-color: #ffffff;
+            --text-primary: #e0e0e0; --text-secondary: #888888; --hover-fill-color: rgba(255, 255, 255, 0.07);
+            --shadow-color: rgba(0, 0, 0, 0.3); --folder-bg: #2c2c2c; --folder-hover: #3a3a3a;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-primary); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .dark-card { background-color: var(--card-bg-color); border-radius: 10px; padding: 40px; margin-bottom: 40px; border: 1px solid #2c2c2c;}
+        .course-header { text-align: center; }
+        .course-code { font-size: 3rem; font-weight: 700; color: var(--accent-color); }
+        .course-name { font-size: 1.3rem; color: var(--text-secondary); }
+        .back-btn { display: inline-block; background-color: transparent; color: var(--accent-color); border: 1px solid var(--accent-color); padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: all 0.2s; margin-bottom: 30px; }
+        .back-btn:hover { background-color: var(--hover-fill-color); transform: translateY(-2px); }
+        .content-card { background: var(--folder-bg); padding: 30px; border-radius: 8px; margin-bottom: 20px; }
+        .content-title { font-size: 1.4rem; margin-bottom: 15px; border-bottom: 2px solid #3a3a3a; padding-bottom: 10px; color: var(--accent-color); }
+        .document-category { margin-bottom: 25px; }
+        .document-category-title { font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 15px; }
+        .documents-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; }
+        .document-card { background-color: #3a3a3a; border-radius: 8px; padding: 15px; display: flex; align-items: center; gap: 15px; text-decoration: none; color: var(--text-primary); transition: all 0.2s; }
+        .document-card:hover { background-color: #4a4a4a; }
+        .document-icon { width: 24px; height: 24px; flex-shrink: 0; }
+        ul, ol { padding-left: 25px; line-height: 1.8; color: var(--text-secondary); }
+        b, strong { color: var(--text-primary); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Back to Home</a>
+        
+        <div class="dark-card course-header">
+            <div class="course-code">CLL111</div>
+            <div class="course-name">Material and Energy Balances</div>
+        </div>
+
+        <div class="dark-card">
+            <h2 class="content-title">📄 Course Resources</h2>
+            <div class="document-category">
+                <h3 class="document-category-title">Notes</h3>
+                <div class="documents-grid">
+                    <a href="documents/CLL111 Notes.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file.svg?size=24&color=888888" class="document-icon"><span>CLL111 Notes.pdf</span></a>
+                    <a href="documents/CLL111 steamtables.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file.svg?size=24&color=888888" class="document-icon"><span>CLL111 steamtables.pdf</span></a>
+                </div>
+            </div>
+            <div class="document-category">
+                <h3 class="document-category-title">Previous Tutorials</h3>
+                <div class="documents-grid">
+                    <a href="documents/CLL111 Tutorial Cox Chart.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file-group.svg?size=24&color=888888" class="document-icon"><span>CLL111 Tutorial Cox Chart.pdf</span></a>
+                    <a href="documents/CLL111 Tutorial Energy Balances.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file-group.svg?size=24&color=888888" class="document-icon"><span>CLL111 Tutorial Energy Balances.pdf</span></a>
+                    <a href="documents/CLL111 Tutorial Ideal Gas.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file-group.svg?size=24&color=888888" class="document-icon"><span>CLL111 Tutorial Ideal Gas.pdf</span></a>
+                    <a href="documents/CLL111 Tutorial Stoichiometry.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file-group.svg?size=24&color=888888" class="document-icon"><span>CLL111 Tutorial Stoichiometry.pdf</span></a>
+                </div>
+            </div>
+            <div class="document-category">
+                <h3 class="document-category-title">PYQs</h3>
+                <div class="documents-grid">
+                    <a href="documents/CLL111 Major 2020.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file-group.svg?size=24&color=888888" class="document-icon"><span>CLL111 Major 2020.pdf</span></a>
+                    <a href="documents/CLL111 Major 2020 Sol.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/key.svg?size=24&color=888888" class="document-icon"><span>CLL111 Major 2020 Sol.pdf</span></a>
+                    <a href="documents/CLL111 Major 2021.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file-group.svg?size=24&color=888888" class="document-icon"><span>CLL111 Major 2021.pdf</span></a>
+                    <a href="documents/CLL111 Major 2023.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file-group.svg?size=24&color=888888" class="document-icon"><span>CLL111 Major 2023.pdf</span></a>
+                </div>
+            </div>
+            <div class="document-category">
+                <h3 class="document-category-title">Books</h3>
+                <div class="documents-grid">
+                    <a href="documents/CLL111 Book Felder Rousseau.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/book.svg?size=24&color=888888" class="document-icon"><span>CLL111 Book Felder Rousseau.pdf</span></a>
+                    <a href="documents/CLL111 Book Himmeblau.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/book.svg?size=24&color=888888" class="document-icon"><span>CLL111 Book Himmeblau.pdf</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h3 class="content-title">📚 Course Contents</h3>
+            <ol>
+                <li><b>Introduction to Chemical Engineering Calculations:</b> Units, dimensions, conversion of units, and process variables (temperature, pressure, composition).</li>
+                <li><b>Gases, Vapors, and Liquids:</b> Ideal Gas Law, properties of gas mixtures, vapor pressure, saturation, partial pressure, and humidity concepts.</li>
+                <li><b>Fundamentals of Material Balances:</b> Process classification, the general balance equation, and solving material balance problems for single units without chemical reaction.</li>
+                <li><b>Stoichiometry and Reactive Systems:</b> Key concepts including limiting and excess reactants, fractional conversion, selectivity, and yield.</li>
+                <li><b>Material Balances for Reactive Processes:</b> Applying material balances to processes involving chemical reactions, with a focus on topics like combustion.</li>
+                <li><b>Multi-Unit Systems:</b> Solving material balances for complex processes involving multiple interconnected units, including recycle, bypass, and purge streams.</li>
+                <li><b>Single-Phase and Multi-Phase Systems:</b> Introduction to phase rule, vapor-liquid equilibria (VLE), Raoult's law, and phase diagrams.</li>
+                <li><b>Energy and Energy Balances:</b> Forms of energy (kinetic, potential, internal), the first law of thermodynamics, and applying energy balances to closed and open systems.</li>
+                <li><b>Thermodynamic Properties & Steam Tables:</b> Understanding state properties like enthalpy and internal energy, and utilizing steam tables for process calculations.</li>
+                <li><b>Energy Balances with Chemical Reactions:</b> Calculating heats of reaction, formation, and combustion, and applying them to solve energy balances for reactive systems.</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

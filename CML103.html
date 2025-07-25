@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CML103 - Applied Chemistry</title>
+    <style>
+        :root {
+            --bg-color: #121212; --card-bg-color: #1e1e1e; --accent-color: #ffffff;
+            --text-primary: #e0e0e0; --text-secondary: #888888; --hover-fill-color: rgba(255, 255, 255, 0.07);
+            --shadow-color: rgba(0, 0, 0, 0.3); --folder-bg: #2c2c2c; --folder-hover: #3a3a3a;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-primary); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .dark-card { background-color: var(--card-bg-color); border-radius: 10px; padding: 40px; margin-bottom: 40px; border: 1px solid #2c2c2c;}
+        .course-header { text-align: center; }
+        .course-code { font-size: 3rem; font-weight: 700; color: var(--accent-color); }
+        .course-name { font-size: 1.3rem; color: var(--text-secondary); }
+        .back-btn { display: inline-block; background-color: transparent; color: var(--accent-color); border: 1px solid var(--accent-color); padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: all 0.2s; margin-bottom: 30px; }
+        .back-btn:hover { background-color: var(--hover-fill-color); transform: translateY(-2px); }
+        .content-card { background: var(--folder-bg); padding: 30px; border-radius: 8px; margin-bottom: 20px; }
+        .content-title { font-size: 1.4rem; margin-bottom: 15px; border-bottom: 2px solid #3a3a3a; padding-bottom: 10px; color: var(--accent-color); }
+        .document-category { margin-bottom: 25px; }
+        .document-category-title { font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 15px; }
+        .documents-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; }
+        .document-card { background-color: #3a3a3a; border-radius: 8px; padding: 15px; display: flex; align-items: center; gap: 15px; text-decoration: none; color: var(--text-primary); transition: all 0.2s; }
+        .document-card:hover { background-color: #4a4a4a; }
+        .document-icon { width: 24px; height: 24px; flex-shrink: 0; }
+        ul, ol { padding-left: 25px; line-height: 1.8; color: var(--text-secondary); }
+        p { color: var(--text-secondary); line-height: 1.8; }
+        b, strong { color: var(--text-primary); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Back to Home</a>
+        
+        <div class="dark-card course-header">
+            <div class="course-code">CML103</div>
+            <div class="course-name">Applied Chemistry: Chemistry at Interfaces</div>
+        </div>
+
+        <div class="dark-card">
+            <h2 class="content-title">📄 Course Resources</h2>
+            <div class="document-category">
+                <h3 class="document-category-title">Notes</h3>
+                <div class="documents-grid">
+                    <a href="documents/CML103 Merged Notes 1.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file.svg?size=24&color=888888" class="document-icon"><span>CML103 Merged Notes 1.pdf</span></a>
+                    <a href="documents/CML103 Merged Notes 2.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file.svg?size=24&color=888888" class="document-icon"><span>CML103 Merged Notes 2.pdf</span></a>
+                    <a href="documents/CML103 Langmuir derivation.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file.svg?size=24&color=888888" class="document-icon"><span>CML103 Langmuir derivation.pdf</span></a>
+                </div>
+            </div>
+            <div class="document-category">
+                <h3 class="document-category-title">PYQs</h3>
+                <div class="documents-grid">
+                    <a href="documents/CML103 Major 2020.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file-group.svg?size=24&color=888888" class="document-icon"><span>CML103 Major 2020.pdf</span></a>
+                    <a href="documents/CML103 Major 2020 Key.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/key.svg?size=24&color=888888" class="document-icon"><span>CML103 Major 2020 Key.pdf</span></a>
+                    <a href="documents/CML103 2021 Major.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file-group.svg?size=24&color=888888" class="document-icon"><span>CML103 2021 Major.pdf</span></a>
+                    <a href="documents/CML103 2021 Major Sol PART A Key.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/key.svg?size=24&color=888888" class="document-icon"><span>CML103 2021 Major Sol PART A Key.pdf</span></a>
+                    <a href="documents/CML103 2021 Major Sol PART A Student Ans.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/key.svg?size=24&color=888888" class="document-icon"><span>CML103 2021 Major Sol PART A Student Ans.pdf</span></a>
+                    <a href="documents/CML103 2021 Major Sol PART B Key.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/key.svg?size=24&color=888888" class="document-icon"><span>CML103 2021 Major Sol PART B Key.pdf</span></a>
+                    <a href="documents/CML103 2021 Major Sol PART B Student 1.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/key.svg?size=24&color=888888" class="document-icon"><span>CML103 2021 Major Sol PART B Student 1.pdf</span></a>
+                    <a href="documents/CML103 2021 Major Sol PART B Student 2.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/key.svg?size=24&color=888888" class="document-icon"><span>CML103 2021 Major Sol PART B Student 2.pdf</span></a>
+                </div>
+            </div>
+            <div class="document-category">
+                <h3 class="document-category-title">Books</h3>
+                 <p>There is no single book that discusses the subject matter for this course at the required level. Here is a short list of possible books that you could consult (with number of copies in the library in parenthesis).</p>
+                <br>
+                <ol>
+                    <li>P. W. Atkins and J. de Paula, Atkins’ Physical Chemistry, 8th edition, Chapters 22, 23, 25 (Numerous)</li>
+                    <li>G. Attard and C. Barnes, Surfaces (copy in Library Photocopy shop)</li>
+                    <li>M. Bowker, The Basis and Applications of Heterogeneous Catalysis (copy in Library Photocopy shop)</li>
+                    <li>R. P. H. Gasser, An Introduction to Chemisorption and Catalysis by Metals (2 GS)</li>
+                    <li>B. C. Gates, Catalytic Chemistry (1 GS)</li>
+                    <li>J. Hagen, Industrial Catalysis (1 GS)</li>
+                    <li>M. M. Green and H. A. Wittcoff, Organic Chemistry Principles and Industrial Practice (2 TB)</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h3 class="content-title">📚 Course Contents</h3>
+            <ol>
+                <li>Unit processes in organic synthesis, Laboratory vs Industrial synthesis.</li>
+                <li>Role of medium in directing synthetic outcomes, organized media.</li>
+                <li>Natural and synthetic constrained systems (inorganic and organic) for control and reactivity in organic reactions.</li>
+                <li><strong>Phase transfer catalysis</strong>, Polymer and other supported reagents for control of reactions.</li>
+                <li><strong>Green Chemistry:</strong> Principles of green chemistry; greener approaches to organic synthesis; use of environmentally benign solvents; applications of non-conventional synthetic methods for industrial applications.</li>
+                <li>Surface chemistry and Kinetics of catalyzed reactions.</li>
+                <li><strong>Homogeneous and Heterogeneous catalysis:</strong> Homogeneous Lewis acid-base catalysts, organometallic catalysts (e.g., olefin metathesis, Suzuki-coupling, Heck coupling, Buchwald coupling).</li>
+                <li>Chemistry of zeolites, silica and other heterogeneous acid and base catalysts.</li>
+            </ol>
+        </div>
+
+    </div>
+</body>
+</html>
