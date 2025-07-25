@@ -20,6 +20,7 @@
         .back-btn:hover { background-color: var(--hover-fill-color); transform: translateY(-2px); }
         .content-card { background: var(--folder-bg); padding: 30px; border-radius: 8px; margin-bottom: 20px; }
         .content-title { font-size: 1.4rem; margin-bottom: 15px; border-bottom: 2px solid #3a3a3a; padding-bottom: 10px; color: var(--accent-color);}
+        .document-category { margin-bottom: 25px; }
         .document-category-title { font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 15px; }
         .documents-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; }
         .document-card { background-color: #3a3a3a; border-radius: 8px; padding: 15px; display: flex; align-items: center; gap: 15px; text-decoration: none; color: var(--text-primary); transition: all 0.2s; }
@@ -40,30 +41,28 @@
 
         <div class="dark-card">
             <h2 class="content-title">📄 Course Resources</h2>
-            <div id="document-categories">
-                <div class="document-category">
-                    <h3 class="document-category-title">Lecture Notes</h3>
-                    <div class="documents-grid">
-                        <a href="documents/CLL110 Printed Notes Combined.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file.svg?size=24&color=888888" class="document-icon"><span>CLL110 Printed Notes Combined.pdf</span></a>
-                        <a href="documents/CLL110 Handwriten notes.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file.svg?size=24&color=888888" class="document-icon"><span>CLL110 Handwriten notes.pdf</span></a>
-                        <a href="documents/CLL110 Other notes.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file.svg?size=24&color=888888" class="document-icon"><span>CLL110 Other notes.pdf</span></a>
-                    </div>
+            <div class="document-category">
+                <h3 class="document-category-title">Notes</h3>
+                <div class="documents-grid">
+                    <a href="documents/CLL110 Printed Notes Combined.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file.svg?size=24&color=888888" class="document-icon"><span>CLL110 Printed Notes Combined.pdf</span></a>
+                    <a href="documents/CLL110 Other notes.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file.svg?size=24&color=888888" class="document-icon"><span>CLL110 Other notes.pdf</span></a>
+                    <a href="https://csciitd-my.sharepoint.com/:b:/g/personal/ch1240687_iitd_ac_in/ETPcLJnhPUdBucSKp6Ie0O0BHJGV5anVlK5kJk5qfURrgw?e=gAGlA7" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file.svg?size=24&color=888888" class="document-icon"><span>CLL110 Handwriten notes</span></a>
                 </div>
-                <div class="document-category">
-                    <h3 class="document-category-title">Book & Solutions</h3>
-                    <div class="documents-grid">
-                        <a href="documents/BSL CLL110 BOOK.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/book.svg?size=24&color=888888" class="document-icon"><span>BSL CLL110 BOOK.pdf</span></a>
-                        <a href="documents/BSL-Solutions.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file-check.svg?size=24&color=888888" class="document-icon"><span>BSL-Solutions.pdf</span></a>
-                    </div>
+            </div>
+            <div class="document-category">
+                <h3 class="document-category-title">PYQs</h3>
+                <div class="documents-grid">
+                    <a href="documents/CLL110 Major 2020.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file-group.svg?size=24&color=888888" class="document-icon"><span>CLL110 Major 2020.pdf</span></a>
+                    <a href="documents/CLL110 Major 2020 Sol.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/key.svg?size=24&color=888888" class="document-icon"><span>CLL110 Major 2020 Sol.pdf</span></a>
+                    <a href="documents/CLL110 Major 2021.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file-group.svg?size=24&color=888888" class="document-icon"><span>CLL110 Major 2021.pdf</span></a>
+                    <a href="documents/CLL110 Major 2021 Sol.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/key.svg?size=24&color=888888" class="document-icon"><span>CLL110 Major 2021 Sol.pdf</span></a>
                 </div>
-                <div class="document-category">
-                    <h3 class="document-category-title">Exams</h3>
-                    <div class="documents-grid">
-                        <a href="documents/CLL110_Major_2020-21_Sem1.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file-group.svg?size=24&color=888888" class="document-icon"><span>CLL110_Major_2020-21_Sem1.pdf</span></a>
-                        <a href="documents/2020_Major_Solutions.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file-group.svg?size=24&color=888888" class="document-icon"><span>2020_Major_Solutions.pdf</span></a>
-                        <a href="documents/CLL110_Major_2021-22_Sem1.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file-group.svg?size=24&color=888888" class="document-icon"><span>CLL110_Major_2021-22_Sem1.pdf</span></a>
-                        <a href="documents/2021-22 Major Solutions.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/file-group.svg?size=24&color=888888" class="document-icon"><span>2021-22 Major Solutions.pdf</span></a>
-                    </div>
+            </div>
+            <div class="document-category">
+                <h3 class="document-category-title">Books</h3>
+                <div class="documents-grid">
+                    <a href="documents/CLL110 Book BSL.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/book.svg?size=24&color=888888" class="document-icon"><span>CLL110 Book BSL.pdf</span></a>
+                    <a href="documents/CLL110 Book BSL Sol.pdf" target="_blank" class="document-card"><img src="https://icongr.am/clarity/key.svg?size=24&color=888888" class="document-icon"><span>CLL110 Book BSL Sol.pdf</span></a>
                 </div>
             </div>
         </div>
