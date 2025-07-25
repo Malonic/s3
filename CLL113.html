@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLL113 - Numerical Methods</title>
+    <style>
+        :root {
+            --bg-color: #121212; --card-bg-color: #1e1e1e; --accent-color: #ffffff;
+            --text-primary: #e0e0e0; --text-secondary: #888888; --hover-fill-color: rgba(255, 255, 255, 0.07);
+            --shadow-color: rgba(0, 0, 0, 0.3); --folder-bg: #2c2c2c; --folder-hover: #3a3a3a;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-primary); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .dark-card { background-color: var(--card-bg-color); border-radius: 10px; padding: 40px; margin-bottom: 40px; border: 1px solid #2c2c2c;}
+        .course-header { text-align: center; }
+        .course-code { font-size: 3rem; font-weight: 700; color: var(--accent-color); }
+        .course-name { font-size: 1.3rem; color: var(--text-secondary); }
+        .back-btn { display: inline-block; background-color: transparent; color: var(--accent-color); border: 1px solid var(--accent-color); padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: all 0.2s; margin-bottom: 30px; }
+        .back-btn:hover { background-color: var(--hover-fill-color); transform: translateY(-2px); }
+        .content-card { background: var(--folder-bg); padding: 30px; border-radius: 8px; margin-bottom: 20px; }
+        .content-title { font-size: 1.4rem; margin-bottom: 15px; border-bottom: 2px solid #3a3a3a; padding-bottom: 10px; color: var(--accent-color); }
+        ul, ol { padding-left: 25px; line-height: 1.8; color: var(--text-secondary); }
+        .grid-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        b { color: var(--text-primary); }
+        @media (max-width: 768px) { .grid-layout { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Back to Home</a>
+        
+        <div class="dark-card course-header">
+            <div class="course-code">CLL113</div>
+            <div class="course-name">Numerical Methods</div>
+        </div>
+
+        <div class="grid-layout">
+            <div>
+                <div class="content-card">
+                    <h3 class="content-title">📚 Course Outline</h3>
+                    <ol>
+                        <li>Introduction, Approximation and Round-off Errors</li>
+                        <li>Linear Algebraic Equations</li>
+                        <li>Root Finding and Solution of Non-linear Equations</li>
+                        <li>Functions, Interpolation, Approximation, Regression</li>
+                        <li>Numerical Integration and Differentiation</li>
+                        <li>Ordinary Differential Equations</li>
+                        <li>Partial Differential Equations</li>
+                    </ol>
+                </div>
+                <div class="content-card">
+                    <h3 class="content-title">📋 Course Policy</h3>
+                     <b>Grading Scheme:</b>
+                    <ul>
+                        <li>Quiz: 10%</li>
+                        <li>Minor Exam: 30%</li>
+                        <li>Major Exam: 35%</li>
+                        <li>Term Paper: 15%</li>
+                        <li>Practical Submissions: 10%</li>
+                    </ul>
+                    <br>
+                    <p><i>Note: All exams will be closed-book.</i></p>
+                </div>
+            </div>
+            <div>
+                 <div class="content-card">
+                    <h3 class="content-title">🔬 Practicals</h3>
+                    <ul>
+                        <li>Practicals start from next week.</li>
+                        <li><b>Schedule:</b> Wednesday, 2:00 PM - 4:00 PM</li>
+                        <li><b>Location:</b> LH-504 (for Groups 2 and 4)</li>
+                        <li>Please bring your calculator.</li>
+                        <li>Practical sheets and submission links will be on Moodle.</li>
+                        <li>Announcements will be sent via course mailing lists.</li>
+                        <li><b>Language:</b> Only C/C++ is admissible for coding.</li>
+                    </ul>
+                </div>
+                <div class="content-card">
+                    <h3 class="content-title">📖 Books & Journals</h3>
+                    <b>Textbooks:</b>
+                    <ul>
+                        <li>S.C. Chapra & R.P. Canale, "Numerical Methods for Engineers"</li>
+                        <li>R.L. Burden & J. D. Faires, "Numerical Analysis"</li>
+                    </ul>
+                    <br>
+                    <b>Reference Books:</b>
+                    <ul>
+                        <li>Atkinson, K.E., "An Introduction to Numerical Analysis"</li>
+                        <li>Gupta, S. K., "Numerical Methods for Engineers"</li>
+                        <li>W. H. et al., "Numerical Recipes in C: The Art of Scientific Computing, 3rd Edition"</li>
+                    </ul>
+                    <br>
+                    <b>Journals:</b>
+                    <ul>
+                        <li><a href="https://www.aps.org" target="_blank" rel="noopener noreferrer">APS</a>, <a href="https://www.sciencedirect.com/" target="_blank" rel="noopener noreferrer">ScienceDirect</a></li>
+                        <li>International Journal for Numerical Methods in Engineering</li>
+                        <li>Physics of Fluids</li>
+                        <li>International Journal of Numerical Methods for Heat & Fluid Flow</li>
+                        <li>Journal of Non-Newtonian Fluid Mechanics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

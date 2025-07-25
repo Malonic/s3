@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEM 3 Portal - CH1/CH7</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-color: #121212;
+            --card-bg-color: #1e1e1e;
+            --accent-color: #ffffff;
+            --text-primary: #e0e0e0;
+            --text-secondary: #888888;
+            --hover-fill-color: rgba(255, 255, 255, 0.07);
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --folder-bg: #2c2c2c;
+            --folder-hover: #3a3a3a;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .header {
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: var(--bg-color);
+            box-shadow: 0 2px 10px var(--shadow-color);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-text h1 {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+        }
+
+        .logo-text p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .main-content {
+            padding: 50px 0;
+        }
+
+        .page-title-section {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .page-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--accent-color);
+        }
+
+        .drive-section {
+            margin-bottom: 50px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .section-icon {
+            width: 24px;
+            height: 24px;
+            fill: var(--accent-color);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+
+        .folders-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .folder-card {
+            background-color: var(--folder-bg);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+            overflow: hidden;
+        }
+
+        .folder-card:hover {
+            background-color: var(--folder-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            border-color: var(--accent-color);
+        }
+
+        .folder-icon-section {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .folder-icon {
+            width: 48px;
+            height: 48px;
+            fill: var(--accent-color);
+        }
+
+        .folder-info {
+            padding: 0 20px 20px 20px;
+            text-align: center;
+        }
+
+        .folder-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .folder-subtitle {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .site-footer {
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+            border-top: 1px solid var(--folder-bg);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .site-footer a {
+            color: var(--accent-color);
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-text">
+                        <h1>SEM 3 Portal</h1>
+                        <p>Chemical Eng. (CH1/CH7)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-title-section">
+                <h1 class="page-title">CH1/CH7 Sem 3 Material</h1>
+            </div>
+
+            <div class="drive-section">
+                <div class="section-header">
+                    <svg class="section-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <h2 class="section-title">Courses</h2>
+                </div>
+                <div class="folders-row">
+                    <a href="CLL110.html" class="folder-card">
+                        <div class="folder-icon-section"><svg class="folder-icon" viewBox="0 0 24 24"><path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z"/></svg></div>
+                        <div class="folder-info">
+                            <div class="folder-name">CLL110</div>
+                            <div class="folder-subtitle">Transport Phenomena</div>
+                        </div>
+                    </a>
+                    <a href="CLL113.html" class="folder-card">
+                        <div class="folder-icon-section"><svg class="folder-icon" viewBox="0 0 24 24"><path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z"/></svg></div>
+                        <div class="folder-info">
+                            <div class="folder-name">CLL113</div>
+                            <div class="folder-subtitle">Numerical Methods</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <footer class="site-footer">
+                Made by <a href="https://www.linkedin.com/in/aditya-banka-55b151375/?originalSubdomain=in" target="_blank" rel="noopener noreferrer">Aditya Banka</a>.
+                <br>
+                Taken from Shashi Kumar Sir's drive.
+            </footer>
+        </div>
+    </main>
+</body>
+</html>
